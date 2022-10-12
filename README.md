@@ -1,27 +1,32 @@
-# ListApplication
+This Project was created using Angular Cli - 13.3.9
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.9.
+Other libraries and external sources used
 
-## Development server
+Json-Server (Fake Back-end) - 0.17.0
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+ng-select - 7.4.0
 
-## Code scaffolding
+Angular Material - 13.3.9
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Please make use of following commands after project has been cloned - 
+npm install
 
-## Build
+To start the project please use following commands - 
+npm start
+ng serve
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+npm run json-Server
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+=> About the Project
 
-## Running end-to-end tests
+- Project has been divided into different components, we are using angular material in the project for 
+design purposes we are using local storage and json-server for storing the data.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+=> Project Overview
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- When the application loads for the first time we can see the existing data in table (initially data in being fetched from the json-server)
+- One can add customers and pin (data in pin component can be viewed in the table, the new data is stored and fetched from the local storage)
+- After successfully adding new customer we can now add new pin where we fill out the required fields
+  and in Collaboratory dropdown we can select from existing customers tocollabrate with, After 
+  successfully adding a new pin we can see the updated data in the table
